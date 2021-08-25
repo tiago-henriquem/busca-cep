@@ -5,8 +5,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #90959e;
+  --bg-form-color: #93aaa8;
+  --white: #fff;
+  --black: #000;
+  --violet: #a88ca8;
+}
+
 body {
+  background-color: var(--bg-color);
   font-size: 50px;
+  font-family: sans-serif;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -18,7 +28,7 @@ body {
 form {
   width: 50vw;
   height: 50vh;
-  background-color: rgb(126, 216, 211);
+  background-color: var(--bg-form-color);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -28,27 +38,29 @@ form {
 button {
   width: 25%;
   height: 10%;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
   border-radius: 3px;
 }
 
 button:hover {
   cursor: pointer;
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #000;
+  background-color: var(--white);
+  color: var(--black);
+  border: 2px solid var(--black);
 }
 
 .cep {
   font-size: 30px;
+  text-align: center;
   width: 50%;
   height: 10%;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .cep:focus {
-  background-color: violet;
-  color: #000;
+  background-color: var(--violet);
+  color: var(--black);
 }
